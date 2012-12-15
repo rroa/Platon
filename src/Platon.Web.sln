@@ -3,7 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Platon.Web", "Platon.Web\", "{9F955AF2-26DE-447E-8F15-D1127D20142A}"
 	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{c6d82d5d-f704-450e-a9f9-152238c650d7}|Platon.Core.dll;{822223e8-13e8-4370-8fac-124c52cf2e61}|Platon.Infrastructure.DataAccessLayer.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/Platon.Web"
 		Debug.AspNetCompiler.PhysicalPath = "Platon.Web\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Platon.Web\"
@@ -21,13 +22,28 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Platon.Web", "Platon.Web\",
 		VWDPort = "27494"
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platon.Core", "Platon.Core\Platon.Core.csproj", "{C6D82D5D-F704-450E-A9F9-152238C650D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platon.Infrastructure.DataAccessLayer", "Platon.Infrastructure.DataAccessLayer\Platon.Infrastructure.DataAccessLayer.csproj", "{822223E8-13E8-4370-8FAC-124C52CF2E61}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9F955AF2-26DE-447E-8F15-D1127D20142A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F955AF2-26DE-447E-8F15-D1127D20142A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F955AF2-26DE-447E-8F15-D1127D20142A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F955AF2-26DE-447E-8F15-D1127D20142A}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C6D82D5D-F704-450E-A9F9-152238C650D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D82D5D-F704-450E-A9F9-152238C650D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D82D5D-F704-450E-A9F9-152238C650D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D82D5D-F704-450E-A9F9-152238C650D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822223E8-13E8-4370-8FAC-124C52CF2E61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822223E8-13E8-4370-8FAC-124C52CF2E61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822223E8-13E8-4370-8FAC-124C52CF2E61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822223E8-13E8-4370-8FAC-124C52CF2E61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
