@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="dbRegClassConnStr">
+      <rd:DataSourceID>70b76dc9-cf64-4f7e-bae8-ee97ef443630</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="nombre">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>nombre</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>47b4354c-c19f-4a70-957a-8645fd19cced</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo_ufhec_black">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <DataSets>
+    <DataSet Name="dsUniversidad_Conteo_EstudiantesActivos">
+      <Fields>
+        <Field Name="Conteo">
+          <DataField>Conteo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="carrera_nombre">
+          <DataField>carrera_nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="recinto_nombre">
+          <DataField>recinto_nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dbRegClassConnStr</DataSourceName>
+        <CommandText>SELECT     COUNT(student_id) AS Conteo, carrera_nombre, recinto_nombre
+FROM         view_EstudiantesActivos
+GROUP BY carrera_nombre, recinto_nombre
+ORDER BY recinto_nombre</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsUniversidad</rd:DataSetName>
+        <rd:TableName>Conteo_EstudiantesActivos</rd:TableName>
+        <rd:TableAdapterName>Conteo_EstudiantesActivosTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6.5in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="textbox6">
+        <rd:DefaultName>textbox6</rd:DefaultName>
+        <Top>0.375in</Top>
+        <Width>4.5in</Width>
+        <Style>
+          <FontSize>11pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>Estudiantes Activos</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.0625in</Top>
+        <Width>5.875in</Width>
+        <Style>
+          <FontSize>14pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Height>0.25in</Height>
+        <Value>=Parameters!nombre.Value</Value>
+      </Textbox>
+      <Table Name="table1">
+        <ZIndex>1</ZIndex>
+        <DataSetName>dsUniversidad_Conteo_EstudiantesActivos</DataSetName>
+        <Top>0.875in</Top>
+        <Width>6.41667in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="recinto_nombre">
+                      <rd:DefaultName>recinto_nombre</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!recinto_nombre.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="carrera_nombre">
+                      <rd:DefaultName>carrera_nombre</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!carrera_nombre.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Conteo">
+                      <rd:DefaultName>Conteo</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!Conteo.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Recinto</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Carrera</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Cantidad de Estudiantes</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>2.16667in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>1.875in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Total</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="Conteo_1">
+                      <rd:DefaultName>Conteo_1</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!Conteo.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+      </Table>
+      <Line Name="line1">
+        <Top>0.75in</Top>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0in</Height>
+      </Line>
+    </ReportItems>
+    <Height>1.625in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>1in</TopMargin>
+</Report>

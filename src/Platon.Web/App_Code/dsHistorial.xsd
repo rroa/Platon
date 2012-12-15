@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsHistorial" targetNamespace="http://tempuri.org/dsHistorial.xsd" xmlns:mstns="http://tempuri.org/dsHistorial.xsd" xmlns="http://tempuri.org/dsHistorial.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="dbRegClassConnStr" ConnectionStringObject="" IsAppSettingsProperty="True" Modifier="Assembly" Name="dbRegClassConnStr (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.dbRegClassConnStr.ConnectionString" Provider="System.Data.SqlClient">
+          </Connection>
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EstudianteSeccionAntTableAdapter" GeneratorDataComponentClassName="EstudianteSeccionAntTableAdapter" Name="EstudianteSeccionAnt" UserDataComponentName="EstudianteSeccionAntTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbRegClassConnStr (Web.config)" DbObjectName="dbRegClassUNNATEC.dbo.EstudianteSeccionAnt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="False" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="False" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     id_session_stud, session_id, f_inscripcion, matricula, nombre, apellido, NombreCompleto, session_cod, session_materia, session_profesor, mat_cod, profesor, 
+                      materia_desc, horario, id_estudiante, ciclo, prof_nombre, prof_apellido, session_ciclo, f_inicio, f_fin, esta, telefono, mail, retirada, debaja, nota, nota_num, 
+                      PrimerParcialEE, PrimerParcialPR, SegundoParcialEE, SegundoParcialPR, ExamenFinal
+FROM         EstudianteSeccionAnt</CommandText>
+                    <Parameters>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id_session_stud" DataSetColumn="id_session_stud" />
+              <Mapping SourceColumn="session_id" DataSetColumn="session_id" />
+              <Mapping SourceColumn="f_inscripcion" DataSetColumn="f_inscripcion" />
+              <Mapping SourceColumn="matricula" DataSetColumn="matricula" />
+              <Mapping SourceColumn="nombre" DataSetColumn="nombre" />
+              <Mapping SourceColumn="apellido" DataSetColumn="apellido" />
+              <Mapping SourceColumn="NombreCompleto" DataSetColumn="NombreCompleto" />
+              <Mapping SourceColumn="session_cod" DataSetColumn="session_cod" />
+              <Mapping SourceColumn="session_materia" DataSetColumn="session_materia" />
+              <Mapping SourceColumn="session_profesor" DataSetColumn="session_profesor" />
+              <Mapping SourceColumn="mat_cod" DataSetColumn="mat_cod" />
+              <Mapping SourceColumn="profesor" DataSetColumn="profesor" />
+              <Mapping SourceColumn="materia_desc" DataSetColumn="materia_desc" />
+              <Mapping SourceColumn="horario" DataSetColumn="horario" />
+              <Mapping SourceColumn="id_estudiante" DataSetColumn="id_estudiante" />
+              <Mapping SourceColumn="ciclo" DataSetColumn="ciclo" />
+              <Mapping SourceColumn="prof_nombre" DataSetColumn="prof_nombre" />
+              <Mapping SourceColumn="prof_apellido" DataSetColumn="prof_apellido" />
+              <Mapping SourceColumn="session_ciclo" DataSetColumn="session_ciclo" />
+              <Mapping SourceColumn="f_inicio" DataSetColumn="f_inicio" />
+              <Mapping SourceColumn="f_fin" DataSetColumn="f_fin" />
+              <Mapping SourceColumn="esta" DataSetColumn="esta" />
+              <Mapping SourceColumn="telefono" DataSetColumn="telefono" />
+              <Mapping SourceColumn="mail" DataSetColumn="mail" />
+              <Mapping SourceColumn="retirada" DataSetColumn="retirada" />
+              <Mapping SourceColumn="debaja" DataSetColumn="debaja" />
+              <Mapping SourceColumn="nota" DataSetColumn="nota" />
+              <Mapping SourceColumn="nota_num" DataSetColumn="nota_num" />
+              <Mapping SourceColumn="PrimerParcialEE" DataSetColumn="PrimerParcialEE" />
+              <Mapping SourceColumn="PrimerParcialPR" DataSetColumn="PrimerParcialPR" />
+              <Mapping SourceColumn="SegundoParcialEE" DataSetColumn="SegundoParcialEE" />
+              <Mapping SourceColumn="SegundoParcialPR" DataSetColumn="SegundoParcialPR" />
+              <Mapping SourceColumn="ExamenFinal" DataSetColumn="ExamenFinal" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="dbRegClassConnStr (Web.config)" DbObjectName="dbRegClassUNNATEC.dbo.EstudianteSeccionAnt" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBySession" GenerateMethods="Both" GenerateShortCommands="True" GeneratorGetMethodName="GetDataBySession" GeneratorSourceName="FillBySession" GetMethodModifier="Public" GetMethodName="GetDataBySession" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="True" UserGetMethodName="GetDataBySession" UserSourceName="FillBySession">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="True">
+                    <CommandText>SELECT     id_session_stud, session_id, f_inscripcion, matricula, nombre, apellido, NombreCompleto, session_cod, session_materia, session_profesor, mat_cod, profesor, 
+                      materia_desc, horario, id_estudiante, ciclo, prof_nombre, prof_apellido, session_ciclo, f_inicio, f_fin, esta, telefono, mail, retirada, debaja, nota, nota_num, 
+                      PrimerParcialEE, PrimerParcialPR, SegundoParcialEE, SegundoParcialPR, ExamenFinal
+FROM         EstudianteSeccionAnt
+where session_id = @session
+order by matricula</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="False" AutogeneratedName="session" ColumnName="session_id" DataSourceName="dbRegClassUNNATEC.dbo.EstudianteSeccionAnt" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@session" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="session_id" SourceColumnNullMapping="False" SourceVersion="Current">
+                      </Parameter>
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources>
+        </Sources>
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsHistorial" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="dsHistorial" msprop:Generator_DataSetName="dsHistorial">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EstudianteSeccionAnt" msprop:Generator_UserTableName="EstudianteSeccionAnt" msprop:Generator_RowDeletedName="EstudianteSeccionAntRowDeleted" msprop:Generator_TableClassName="EstudianteSeccionAntDataTable" msprop:Generator_RowChangedName="EstudianteSeccionAntRowChanged" msprop:Generator_RowClassName="EstudianteSeccionAntRow" msprop:Generator_RowChangingName="EstudianteSeccionAntRowChanging" msprop:Generator_RowEvArgName="EstudianteSeccionAntRowChangeEvent" msprop:Generator_RowEvHandlerName="EstudianteSeccionAntRowChangeEventHandler" msprop:Generator_TablePropName="EstudianteSeccionAnt" msprop:Generator_TableVarName="tableEstudianteSeccionAnt" msprop:Generator_RowDeletingName="EstudianteSeccionAntRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id_session_stud" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:Generator_UserColumnName="id_session_stud" msprop:Generator_ColumnPropNameInRow="id_session_stud" msprop:Generator_ColumnVarNameInTable="columnid_session_stud" msprop:Generator_ColumnPropNameInTable="id_session_studColumn" type="xs:int" />
+              <xs:element name="session_id" msprop:Generator_UserColumnName="session_id" msprop:Generator_ColumnPropNameInRow="session_id" msprop:Generator_ColumnVarNameInTable="columnsession_id" msprop:Generator_ColumnPropNameInTable="session_idColumn" type="xs:int" />
+              <xs:element name="f_inscripcion" msprop:Generator_UserColumnName="f_inscripcion" msprop:Generator_ColumnPropNameInRow="f_inscripcion" msprop:Generator_ColumnVarNameInTable="columnf_inscripcion" msprop:Generator_ColumnPropNameInTable="f_inscripcionColumn" type="xs:dateTime" />
+              <xs:element name="matricula" msprop:Generator_UserColumnName="matricula" msprop:Generator_ColumnPropNameInRow="matricula" msprop:Generator_ColumnVarNameInTable="columnmatricula" msprop:Generator_ColumnPropNameInTable="matriculaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nombre" msprop:Generator_UserColumnName="nombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInTable="nombreColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="apellido" msprop:Generator_UserColumnName="apellido" msprop:Generator_ColumnPropNameInRow="apellido" msprop:Generator_ColumnVarNameInTable="columnapellido" msprop:Generator_ColumnPropNameInTable="apellidoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreCompleto" msdata:ReadOnly="true" msprop:Generator_UserColumnName="NombreCompleto" msprop:Generator_ColumnPropNameInRow="NombreCompleto" msprop:Generator_ColumnVarNameInTable="columnNombreCompleto" msprop:Generator_ColumnPropNameInTable="NombreCompletoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="session_cod" msprop:Generator_UserColumnName="session_cod" msprop:Generator_ColumnPropNameInRow="session_cod" msprop:Generator_ColumnVarNameInTable="columnsession_cod" msprop:Generator_ColumnPropNameInTable="session_codColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="session_materia" msprop:Generator_UserColumnName="session_materia" msprop:Generator_ColumnPropNameInRow="session_materia" msprop:Generator_ColumnVarNameInTable="columnsession_materia" msprop:Generator_ColumnPropNameInTable="session_materiaColumn" type="xs:int" />
+              <xs:element name="session_profesor" msprop:Generator_UserColumnName="session_profesor" msprop:Generator_ColumnPropNameInRow="session_profesor" msprop:Generator_ColumnVarNameInTable="columnsession_profesor" msprop:Generator_ColumnPropNameInTable="session_profesorColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="mat_cod" msprop:Generator_UserColumnName="mat_cod" msprop:Generator_ColumnPropNameInRow="mat_cod" msprop:Generator_ColumnVarNameInTable="columnmat_cod" msprop:Generator_ColumnPropNameInTable="mat_codColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="profesor" msdata:ReadOnly="true" msprop:Generator_UserColumnName="profesor" msprop:Generator_ColumnPropNameInRow="profesor" msprop:Generator_ColumnVarNameInTable="columnprofesor" msprop:Generator_ColumnPropNameInTable="profesorColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="materia_desc" msprop:Generator_UserColumnName="materia_desc" msprop:Generator_ColumnPropNameInRow="materia_desc" msprop:Generator_ColumnVarNameInTable="columnmateria_desc" msprop:Generator_ColumnPropNameInTable="materia_descColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="horario" msprop:Generator_UserColumnName="horario" msprop:Generator_ColumnPropNameInRow="horario" msprop:Generator_ColumnVarNameInTable="columnhorario" msprop:Generator_ColumnPropNameInTable="horarioColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="id_estudiante" msprop:Generator_UserColumnName="id_estudiante" msprop:Generator_ColumnPropNameInRow="id_estudiante" msprop:Generator_ColumnVarNameInTable="columnid_estudiante" msprop:Generator_ColumnPropNameInTable="id_estudianteColumn" type="xs:int" />
+              <xs:element name="ciclo" msprop:Generator_UserColumnName="ciclo" msprop:Generator_ColumnPropNameInRow="ciclo" msprop:Generator_ColumnVarNameInTable="columnciclo" msprop:Generator_ColumnPropNameInTable="cicloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prof_nombre" msprop:Generator_UserColumnName="prof_nombre" msprop:Generator_ColumnPropNameInRow="prof_nombre" msprop:Generator_ColumnVarNameInTable="columnprof_nombre" msprop:Generator_ColumnPropNameInTable="prof_nombreColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="prof_apellido" msprop:Generator_UserColumnName="prof_apellido" msprop:Generator_ColumnPropNameInRow="prof_apellido" msprop:Generator_ColumnVarNameInTable="columnprof_apellido" msprop:Generator_ColumnPropNameInTable="prof_apellidoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="session_ciclo" msprop:Generator_UserColumnName="session_ciclo" msprop:Generator_ColumnPropNameInRow="session_ciclo" msprop:Generator_ColumnVarNameInTable="columnsession_ciclo" msprop:Generator_ColumnPropNameInTable="session_cicloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="f_inicio" msprop:Generator_UserColumnName="f_inicio" msprop:Generator_ColumnPropNameInRow="f_inicio" msprop:Generator_ColumnVarNameInTable="columnf_inicio" msprop:Generator_ColumnPropNameInTable="f_inicioColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="f_fin" msprop:Generator_UserColumnName="f_fin" msprop:Generator_ColumnPropNameInRow="f_fin" msprop:Generator_ColumnVarNameInTable="columnf_fin" msprop:Generator_ColumnPropNameInTable="f_finColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="esta" msprop:Generator_UserColumnName="esta" msprop:Generator_ColumnPropNameInRow="esta" msprop:Generator_ColumnVarNameInTable="columnesta" msprop:Generator_ColumnPropNameInTable="estaColumn" type="xs:boolean" />
+              <xs:element name="telefono" msprop:Generator_UserColumnName="telefono" msprop:Generator_ColumnPropNameInRow="telefono" msprop:Generator_ColumnVarNameInTable="columntelefono" msprop:Generator_ColumnPropNameInTable="telefonoColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="mail" msprop:Generator_UserColumnName="mail" msprop:Generator_ColumnPropNameInRow="mail" msprop:Generator_ColumnVarNameInTable="columnmail" msprop:Generator_ColumnPropNameInTable="mailColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="retirada" msprop:Generator_UserColumnName="retirada" msprop:Generator_ColumnPropNameInRow="retirada" msprop:Generator_ColumnVarNameInTable="columnretirada" msprop:Generator_ColumnPropNameInTable="retiradaColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="debaja" msprop:Generator_UserColumnName="debaja" msprop:Generator_ColumnPropNameInRow="debaja" msprop:Generator_ColumnVarNameInTable="columndebaja" msprop:Generator_ColumnPropNameInTable="debajaColumn" type="xs:boolean" minOccurs="0" />
+              <xs:element name="nota" msprop:Generator_UserColumnName="nota" msprop:Generator_ColumnPropNameInRow="nota" msprop:Generator_ColumnVarNameInTable="columnnota" msprop:Generator_ColumnPropNameInTable="notaColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nota_num" msprop:Generator_UserColumnName="nota_num" msprop:Generator_ColumnPropNameInRow="nota_num" msprop:Generator_ColumnVarNameInTable="columnnota_num" msprop:Generator_ColumnPropNameInTable="nota_numColumn" type="xs:int" />
+              <xs:element name="PrimerParcialEE" msprop:Generator_UserColumnName="PrimerParcialEE" msprop:Generator_ColumnPropNameInRow="PrimerParcialEE" msprop:Generator_ColumnVarNameInTable="columnPrimerParcialEE" msprop:Generator_ColumnPropNameInTable="PrimerParcialEEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="PrimerParcialPR" msprop:Generator_UserColumnName="PrimerParcialPR" msprop:Generator_ColumnPropNameInRow="PrimerParcialPR" msprop:Generator_ColumnVarNameInTable="columnPrimerParcialPR" msprop:Generator_ColumnPropNameInTable="PrimerParcialPRColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SegundoParcialEE" msprop:Generator_UserColumnName="SegundoParcialEE" msprop:Generator_ColumnPropNameInRow="SegundoParcialEE" msprop:Generator_ColumnVarNameInTable="columnSegundoParcialEE" msprop:Generator_ColumnPropNameInTable="SegundoParcialEEColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SegundoParcialPR" msprop:Generator_UserColumnName="SegundoParcialPR" msprop:Generator_ColumnPropNameInRow="SegundoParcialPR" msprop:Generator_ColumnVarNameInTable="columnSegundoParcialPR" msprop:Generator_ColumnPropNameInTable="SegundoParcialPRColumn" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ExamenFinal" msprop:Generator_UserColumnName="ExamenFinal" msprop:Generator_ColumnPropNameInRow="ExamenFinal" msprop:Generator_ColumnVarNameInTable="columnExamenFinal" msprop:Generator_ColumnPropNameInTable="ExamenFinalColumn" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:EstudianteSeccionAnt" />
+      <xs:field xpath="mstns:id_session_stud" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

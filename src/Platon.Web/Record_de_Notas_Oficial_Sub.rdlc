@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="dbRegClassConnStr">
+      <ConnectionProperties>
+        <ConnectString />
+        <DataProvider>SQL</DataProvider>
+      </ConnectionProperties>
+      <rd:DataSourceID>6f58b7dd-73bc-4bcc-97ff-2ff8e00bdaf9</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <Body>
+    <ColumnSpacing>0.1in</ColumnSpacing>
+    <Columns>2</Columns>
+    <ReportItems>
+      <Table Name="table1">
+        <DataSetName>dsUniversidad_View_RecordDeNotas</DataSetName>
+        <TableGroups>
+          <TableGroup>
+            <Footer>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox13">
+                          <rd:DefaultName>textbox13</rd:DefaultName>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontWeight>700</FontWeight>
+                            <FontSize>8pt</FontSize>
+                            <Format>F</Format>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>=Sum(Fields!valor.Value)/Count(Fields!valor.Value)</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox15">
+                          <rd:DefaultName>textbox15</rd:DefaultName>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontSize>8pt</FontSize>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox10">
+                          <rd:DefaultName>textbox10</rd:DefaultName>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontSize>8pt</FontSize>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                    <TableCell>
+                      <ReportItems>
+                        <Textbox Name="textbox16">
+                          <rd:DefaultName>textbox16</rd:DefaultName>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontSize>8pt</FontSize>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value />
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.25in</Height>
+                </TableRow>
+              </TableRows>
+            </Footer>
+            <Header>
+              <TableRows>
+                <TableRow>
+                  <TableCells>
+                    <TableCell>
+                      <ColSpan>4</ColSpan>
+                      <ReportItems>
+                        <Textbox Name="session_ciclo">
+                          <rd:DefaultName>session_ciclo</rd:DefaultName>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <BorderStyle>
+                              <Default>Solid</Default>
+                            </BorderStyle>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingBottom>2pt</PaddingBottom>
+                            <FontWeight>700</FontWeight>
+                            <FontSize>8pt</FontSize>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                          </Style>
+                          <CanGrow>true</CanGrow>
+                          <Value>="CUATRIMESTRE " &amp; Fields!session_ciclo.Value</Value>
+                        </Textbox>
+                      </ReportItems>
+                    </TableCell>
+                  </TableCells>
+                  <Height>0.25in</Height>
+                </TableRow>
+              </TableRows>
+            </Header>
+            <Grouping Name="table1_Group1">
+              <Label>=Fields!session_ciclo.Value</Label>
+              <Parent>=Fields!session_ciclo.Value</Parent>
+              <GroupExpressions>
+                <GroupExpression>=Fields!session_ciclo.Value</GroupExpression>
+              </GroupExpressions>
+            </Grouping>
+          </TableGroup>
+        </TableGroups>
+        <Width>3.125in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="mat_cod">
+                      <rd:DefaultName>mat_cod</rd:DefaultName>
+                      <ZIndex>3</ZIndex>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!materia_desc.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="mat_credit">
+                      <rd:DefaultName>mat_credit</rd:DefaultName>
+                      <ZIndex>2</ZIndex>
+                      <Style>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!mat_credit.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <ZIndex>1</ZIndex>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!nota_num.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="nota_num">
+                      <rd:DefaultName>nota_num</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!nota.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <FontSize>8pt</FontSize>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <ZIndex>12</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>DESCRIPCION</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox20">
+                      <rd:DefaultName>textbox20</rd:DefaultName>
+                      <ZIndex>11</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>CR.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox25">
+                      <rd:DefaultName>textbox25</rd:DefaultName>
+                      <ZIndex>10</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>CAL.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox32">
+                      <rd:DefaultName>textbox32</rd:DefaultName>
+                      <ZIndex>9</ZIndex>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <TextAlign>Center</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingBottom>2pt</PaddingBottom>
+                        <FontWeight>700</FontWeight>
+                        <FontSize>8pt</FontSize>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>PS.</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>2in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.375in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.375in</Width>
+          </TableColumn>
+        </TableColumns>
+      </Table>
+    </ReportItems>
+    <Height>1in</Height>
+  </Body>
+  <rd:ReportID>caebc105-4b58-4e6a-8a80-ac2f2e6898d1</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo_uniremhos">
+      <ImageData>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</ImageData>
+      <MIMEType>image/gif</MIMEType>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <DataSets>
+    <DataSet Name="dsUniversidad_View_RecordDeNotas">
+      <rd:DataSetInfo>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:DataSetName>dsUniversidad</rd:DataSetName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterName>View_RecordDeNotasTableAdapter</rd:TableAdapterName>
+        <rd:TableName>View_RecordDeNotas</rd:TableName>
+      </rd:DataSetInfo>
+      <Query>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+        <CommandText>SELECT     matricula, nombre, apellido, session_cod, session_ciclo, session_materia, materia_desc, mat_cod, nota, nota_num, valor, id_ciclo, f_nacimiento, 
+                      fecha_ingreso, sexo, carrera_nombre, nacionalidad, graduo_bachiller, mat_credit
+FROM         View_RecordDeNotas
+ORDER BY id_ciclo</CommandText>
+        <DataSourceName>dbRegClassConnStr</DataSourceName>
+      </Query>
+      <Fields>
+        <Field Name="matricula">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>matricula</DataField>
+        </Field>
+        <Field Name="nombre">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>nombre</DataField>
+        </Field>
+        <Field Name="apellido">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>apellido</DataField>
+        </Field>
+        <Field Name="session_cod">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>session_cod</DataField>
+        </Field>
+        <Field Name="session_ciclo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>session_ciclo</DataField>
+        </Field>
+        <Field Name="session_materia">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>session_materia</DataField>
+        </Field>
+        <Field Name="materia_desc">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>materia_desc</DataField>
+        </Field>
+        <Field Name="mat_cod">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>mat_cod</DataField>
+        </Field>
+        <Field Name="nota">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>nota</DataField>
+        </Field>
+        <Field Name="nota_num">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>nota_num</DataField>
+        </Field>
+        <Field Name="valor">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>valor</DataField>
+        </Field>
+        <Field Name="id_ciclo">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>id_ciclo</DataField>
+        </Field>
+        <Field Name="f_nacimiento">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>f_nacimiento</DataField>
+        </Field>
+        <Field Name="fecha_ingreso">
+          <rd:TypeName>System.DateTime</rd:TypeName>
+          <DataField>fecha_ingreso</DataField>
+        </Field>
+        <Field Name="sexo">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>sexo</DataField>
+        </Field>
+        <Field Name="carrera_nombre">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>carrera_nombre</DataField>
+        </Field>
+        <Field Name="nacionalidad">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>nacionalidad</DataField>
+        </Field>
+        <Field Name="graduo_bachiller">
+          <rd:TypeName>System.String</rd:TypeName>
+          <DataField>graduo_bachiller</DataField>
+        </Field>
+        <Field Name="mat_credit">
+          <rd:TypeName>System.Int32</rd:TypeName>
+          <DataField>mat_credit</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Width>3.25in</Width>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <Language>en-US</Language>
+</Report>

@@ -1,0 +1,330 @@
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+
+}
+
+body{
+	margin: 0;
+	background: url(images/background.jpg) repeat-x;
+	text-align: center;
+	padding-top: 20px;
+}
+
+a{
+	color: #99287D;
+}
+
+h1{
+	font-size: 14px;
+}
+
+h1.comite{
+	font-size: 22px;
+	font-weight: normal;
+}
+
+h2{
+	font-size: 12px;
+	font-weight: normal;
+}
+
+h2.direccion{
+	font-size: 16px;
+}
+
+h2.enlaces a{
+	font-size: 12px;
+	color: #FC0;
+}
+
+h2.enlaces a:hover{
+	font-size: 10px;
+	font-weight: bold;
+}
+
+h3.secondline{
+	color: #FFCC00;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3 a{
+	font-size: 16px;
+	font-weight: normal;
+	color: #FC0;
+}
+
+h3.secondline a{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h3.padroncillo a{
+	font-size: 24px;
+}
+
+h3.padroncillo2 a{
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h5{
+	font-size: 34px;
+	font-weight: bold;
+	color: #471F65;
+	text-transform: uppercase;
+}
+
+h5.firstnum{
+	font-size: 42px;
+	font-weight: normal;
+}
+
+h5.secondnum{
+	font-size: 37px;
+	font-weight: normal;
+}
+
+h5.text{
+	font-size: 22px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+	#content{
+		margin: auto;
+		width: 787px;
+		height: 586px;
+		background: url(images/content_background.gif) repeat-y;
+		text-align: center;
+	}
+	
+		#content2{
+			margin: 0 6px;
+			width: 775px;
+			height: 586px;
+		}
+		
+			#cabecera{
+				width: 775px;
+				height: 120px;
+				background: #98287B url(images/content2_background.jpg) repeat-y;
+			}
+		
+				#logo{
+					width: 66px;
+					height: 92px;
+					padding: 12px 10px 13px 18px;
+					text-align: right;
+					float: left;
+				}
+				
+				#texto{
+					width: 352px;
+					height: 92px;
+					color: #471F65;
+					padding-top: 25px;
+					float: left;
+				}
+				
+					#texto1{
+						height: 34px;
+					}
+					
+					#texto2{
+						padding-top: 5px;
+						height: 58px;
+					}
+					
+				#pa_lante{
+					width: 162px;
+					height: 92px;
+					padding: 18px 17px 4px 0;
+					text-align: left;
+					float: left;
+				}
+				
+				#leonel{
+					width: 150px;
+					height: 120px;
+					float: left;
+					text-align: left;
+				}
+
+			#barra{
+				width: 775px;
+				height: 15px;
+				background: #98287B;
+			}
+			
+			#content3{
+				margin: 30px 40px 0 40px;
+				width: 694px;
+				height: 405px;
+				float: left;
+			}
+			
+				#leftpane{
+					margin: 0 0 9px 0;
+					width: 200px;
+					height: 405px;
+					float: left;
+				}
+				
+					#recuadro{
+						width: 200px;
+						height: 87px;
+						margin: 0;
+					}
+					
+						.botones{
+							width: 200px;
+							height: 76px;
+							background-color: #98287B;
+							cursor:pointer;
+						}
+						
+						.botones2{
+							width: 200px;
+							height: 76px;
+							background-color: #98287B;
+						}
+						
+						.texto_botones{
+							margin: 10px 0 0 10px;
+							width: 122px;
+							height: 66px;
+							float: left;
+						}
+						
+						.imagen_boton{
+							margin: 22px 0 0 0;
+							width: 59px;
+							height: 65px;
+							float: left;
+						}
+						
+					.recuadro2{
+						width: 200px;
+						height: 87px;
+						margin: 19px 0 0 0;
+					}
+					
+				#contentpane{
+					margin: 0 0 0 40px;
+					width: 452px;
+					height: 405px;
+					float: left;
+				}
+				
+					#centro{
+						width: auto;
+						height: 183px;
+					}
+					
+						#texto_centro{
+							height: auto;
+							text-align: center;
+						}
+						
+						#linea{
+							margin-top: 10px;
+							height: 2px;
+						}
+						
+						#telefono{
+							margin:12px 25px 0 32px;
+							width: 119px;
+							height: 113px;
+							float: left;
+						}
+						
+						#numeros{
+							margin-top: 12px;
+							width: auto;
+							height: auto;
+							float: left;
+						}
+						
+					#recuadro3{
+						margin-top: 29px;
+						width: 452px;
+						height: 120px;
+						float: left;
+					}
+					
+						#botones2{
+							width: 452px;
+							height: 76px;
+							background-color: #98287B;
+							cursor:pointer;
+						}
+						
+						#texto_botones2{
+							margin: 10px 0 0 10px;
+							width: auto;
+							height: 52px;
+							float: left;
+						}
+						
+						#imagen_boton2{
+							margin: 29px 0 0 174px;
+							width: 59px;
+							height: 65px;
+							float: left;
+						}
+						
+					#footer{
+						margin-top: 18px;
+						width: 452px;
+						height: 51px;
+						float: right;
+					}
+					
+						#footer_line1{
+							height: auto;
+							font-size: 12px;
+							color: #99287D;
+						}
+						
+							#validator{
+								width: 50%;
+								float: left;
+								border-bottom: #666 1px solid;
+							}
+							
+							#terminos{
+								width: 50%;
+								text-align: right;
+								float: right;
+								border-bottom: #666 1px solid;
+							}
+							
+						#footer_line2{
+							height: auto;
+							font-size: 12px;
+							color: #666666;
+						}
+						
+							#derechos{
+								width: 50%;
+								float: left;
+							}
+							
+							#DNE{
+								width: 50%;
+								float: left;
+								text-align: right;
+							}
+							
+	#bottom{
+		margin:auto;
+		width: 787px;
+		height:6px;		
+		background: url(images/bottom_background.gif) no-repeat;
+	}

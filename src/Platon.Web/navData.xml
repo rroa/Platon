@@ -1,0 +1,137 @@
+﻿<items>
+  <item Text="Admisiones" >
+    <item Text="Solicitud de Ingreso" NavigateUrl="solicitudIngreso.aspx"/>
+    <item Text="Modificar Solicitud de Ingreso" NavigateUrl="solicitudIngresoAct.aspx"/>
+    <item Text="Admision de Estudiante" NavigateUrl="insertEstudiante.aspx"/>
+    <item Text="Editar datos de estudiantes" NavigateUrl="mantEstudiante.aspx"/>
+  </item>
+
+  <item Text="Registro" >
+    <item Text="Pre-selección de materias" NavigateUrl="preseleccion.aspx"/>
+    <item Text="Inscripción de Estudiantes" NavigateUrl="insertStudent_Seccion.aspx"/>
+    <item Text="Bajas y añadidas" NavigateUrl="BajasAnadidas.aspx"/>
+    <item Text="Retiro de materias" NavigateUrl="retiroMaterias.aspx"/>
+    <!--<item Text="Modificacion de Inscripcion" NavigateUrl="modificarInscripcion.aspx"/>-->
+    <item Text="Mover estudiante de seccion:Individual" NavigateUrl="moverSeccion.aspx"/>
+    <item Text="Mover estudiante de seccion:Grupal" NavigateUrl="moverSeccionGrupo.aspx"/>
+    <!--<item Color="Red"  Text="MATERIAS ESTUDIANTES VIEJOS" NavigateUrl="Insert_StudentManual.aspx"/>-->
+    <item Text="Solicitud de Servicio" NavigateUrl="SolicitudServicio.aspx"/>
+    <item Text="Cambio de carrera" NavigateUrl="CambioCarrera.aspx"/>
+    <item Text="Cambio de Pensum" NavigateUrl="CambioPensum.aspx"/>
+    <item Text="Des./Act. Estudiantes" NavigateUrl="DesactivarEstudiante.aspx"/>
+    <item Text="Cambiar clave a estudiante" NavigateUrl="claveestudiante.aspx"/>
+    <item Text="Arreglar matriculas" NavigateUrl="arreglarmatricula.aspx"/>
+    <item Text="Manejo de becas" NavigateUrl="becas.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="NOTAS"/>
+    <item Text="Notas de Estudiantes" NavigateUrl="insertEstudianteNota.aspx"/>
+    <item Text="Nota por Seccion" NavigateUrl=" NotasSeccion.aspx"/>
+    <item Text="Modificación de calificaciones" NavigateUrl="ModificacionCalificaciones.aspx"/>
+    <item Text="Convalidaciones" NavigateUrl="Convalidaciones.aspx"/>
+	<item Text="Exoneración" NavigateUrl="Exoneracion.aspx"/>
+    <item Text="Record de Notas" NavigateUrl="RecordNotas.aspx"/>
+    <item Text="Notas con el pensum" NavigateUrl="NotaPensum.aspx"/>
+    <item Text="Notas desde libros" NavigateUrl="NotaLibro.aspx"/>
+    <item Text="Recalcular Condicion Académica" NavigateUrl="condicionacademica.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="FORMULARIOS"/>
+    <item Text="Form 00-01" NavigateUrl="formulario1.aspx"/>
+    <item Text="Form 00-02" NavigateUrl="formulario2.aspx"/>
+    <item Text="Form 00-03" NavigateUrl="formulario3.aspx"/>
+    <item Text="Form 00-04" NavigateUrl="formulario4.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Color="Red"  Text="ELIMINAR"/>
+    <item Color="Red"  Text="Eliminar Inscripción activa" NavigateUrl="eliminarinscripcion.aspx"/>
+    <item Color="Red"  Text="Eliminar materia de record" NavigateUrl="eliminarmateria.aspx"/>
+    <item Color="Red"  Text="Eliminar nota" NavigateUrl="eliminarnota.aspx"/>
+  </item>
+
+  <item Text="Caja">
+    <item Text="Pago de Servicios" NavigateUrl="Pagos.aspx"/>
+    <item Text="Registro de deudas antiguas" NavigateUrl="FormBalancePendienteViejo.aspx"/>
+    <item Text="Acuerdo de Pago" NavigateUrl="AcuerdoPago.aspx"/>
+    <item Text="Resumen Diario General" NavigateUrl="ResumenDiario.aspx"/>
+    <item Text="Resumen Diario por Cajero" NavigateUrl="ResumenDiarioCajero.aspx"/>
+    <item Text="Resumen Rango de fechas" NavigateUrl="ResumenEntreFechas.aspx"/>
+    <item Text="Cuentas por Cobrar a Estudiantes" NavigateUrl="CxCestudiante.aspx"/>
+  </item>
+
+  <item Text="Administrador">
+    <item Text="Cancelar Pago" NavigateUrl="cancelarpago.aspx"/>
+    <item Text="Modificar Balances" NavigateUrl="ModificarBalance.aspx"/>
+    <item Text="Mensajes" NavigateUrl="mensajes.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="MANTENIMIENTOS"/>
+    <item Text="Recinto" NavigateUrl="insertRecinto.aspx"/>
+    <item Text="Aulas" NavigateUrl="insertAula.aspx"/>
+    <item Text="Carreras" NavigateUrl="insertCarrera.aspx"/>
+    <item Text="Costo de Inscripción" NavigateUrl="insertCostoInscripcion.aspx"/>
+    <item Text="Costo de Créditos" NavigateUrl="insertCostoCredito.aspx"/>
+    <item Text="Profesores" NavigateUrl="insertProfesor.aspx"/>
+    <item Text="Mantenimiento de Profesores" NavigateUrl="MantProfesores.aspx"/>
+    <item Text="Servicio" NavigateUrl="insertServicio.aspx"/>
+    <item Text="Nuevos Usuarios" NavigateUrl="insertUsuario.aspx"/>
+    <item Text="Usuarios Actuales" NavigateUrl="mantUsuario.aspx"/>
+    <item Text="Cambiar clave a usuarios" NavigateUrl="cambioClave.aspx"/>
+    <item Text="Activar/Desactivar Usuarios" NavigateUrl="Desactivar.aspx"/>
+	<item Text="ExtraCredito" NavigateUrl="ExtraCredito.aspx"/>
+  </item>
+
+  <item Text="Coordinación">
+    <item Text="Pensum" NavigateUrl="insertPensum.aspx"/>
+    <item Text="Ciclos" NavigateUrl="insertCiclo.aspx"/>
+    <item Text="Cuatrimestre" NavigateUrl="insertSemestre.aspx"/>
+    <item Text="Período" NavigateUrl="insertarPeriodo.aspx"/>
+    <item Text="Horario" NavigateUrl="insertHorario.aspx"/>
+    <item Text="Materias" NavigateUrl="insertMateria.aspx"/>
+    <item Text="Listado de Materias" NavigateUrl="ListadoMaterias.aspx"/>
+    <item Text="Secciones" NavigateUrl="insertSession.aspx"/>
+    <item Text="Modificar Secciones" NavigateUrl="ModificarSession.aspx"/>
+    <item Text="Programacion de clases" NavigateUrl="copiarprogramacion.aspx"/>
+    <item Text="Horario de Secciones" NavigateUrl="insertSessionHorario.aspx"/>
+    <item Text="Desactivar Secciones" NavigateUrl="DesactSession.aspx"/>
+    <item Text="Carga Academica por profesor" NavigateUrl="CargaAcademicaProfesor.aspx"/>
+    <item Text="Des./Act. Profesores" NavigateUrl="DesactivarProfesor.aspx"/>
+  </item>
+
+  <item Text="Reportes">
+    <item Text="ESTUDIANTES"/>
+    <item Text="Hoja de Inscripción" NavigateUrl="HojaInscripcion.aspx"/>
+    <item Text="Record de Notas" NavigateUrl="RecordNotas.aspx"/>
+    <item Text="Record de Notas Cuatrimestral" NavigateUrl="RecordNotasCuatrimestral.aspx"/>
+    <item Text="Estudiantes Activos" NavigateUrl="EstudiantesActivos.aspx"/>
+    <item Text="Estudiantes Inactivos por Ciclo" NavigateUrl="EstudiantesInactivos.aspx"/>
+    <item Text="Todos los estudiantes" NavigateUrl="TodosEstudiantes.aspx"/>
+    <item Text="Estudiantes por Recinto" NavigateUrl="estudiantesXrecinto.aspx"/>
+    <item Text="Estudiantes por Carrera: Todos" NavigateUrl="estudiantesXcarrera.aspx"/>
+    <item Text="Estudiantes por Carrera: Activos" NavigateUrl="estudiantesXcarreraActivos.aspx"/>
+    <item Text="Estudiantes por Ciclo de entrada" NavigateUrl="estudiantesXEntrada.aspx"/>
+    <item Text="Estudiantes por Ciclo  y Carrera" NavigateUrl="estudiantesXEntradaXCarrera.aspx"/>
+    <item Text="Estudiantes con información pendiente" NavigateUrl="EstudiantesFaltaDato.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="SECCIONES ACTIVAS"/>
+    <item Text="Listado de Secciones Activas" NavigateUrl="ListadoSecciones.aspx"/>
+    <item Text="Estudiantes por Sección:Correo/Telefono" NavigateUrl="estudiantesenseccion.aspx"/>
+    <item Text="Estudiantes por Sección:Balance" NavigateUrl="estudiantesenseccionbalance.aspx"/>
+    <item Text="Estudiantes por Sección:Asistencia" NavigateUrl="Asistencia_estudiantesenseccion.aspx"/>
+    <item Text="Estudiantes por Sección:Calificacion" NavigateUrl="InformeCalificacionFinal.aspx"/>
+    <item Text="Listado para calificaciones de Monográfico" NavigateUrl="InformeCalificacionMonografico.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="SECCIONES ANTIGUAS"/>
+    <item Text="Listado de Secciones" NavigateUrl="ListadoSeccionesAnt.aspx"/>
+    <item Text="Historial de Calificaciones" NavigateUrl="formulario4Ant.aspx"/>
+    <item Text="Estudiantes por Sección:Calificacion" NavigateUrl="InformeCalificacionFinalAnt.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="CONTABLES"/>
+    <item Text="Deuda General" NavigateUrl="DeudaGeneral.aspx"/>
+    <item Text="---------------------------------------------"/>
+    <item Text="OTROS"/>
+    <item Text="Listado de Profesores" NavigateUrl="ListadoProfesores.aspx"/>
+    <item Text="Listado de Usuarios" NavigateUrl="listadoUsuarios.aspx"/>
+	  <item Text="Imprimir Pensum" NavigateUrl="imprimirPensum.aspx"/>
+    <item Text="Listado de Materias" NavigateUrl="ListadoMaterias.aspx"/>
+  </item>
+  <item Text="---------------------------------------------"/>
+  <item Text="Consulta de matrícula" NavigateUrl ="ConsultaMatricula.aspx">
+     </item>
+</items>

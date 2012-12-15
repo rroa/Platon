@@ -1,0 +1,88 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mpDirectiva.master.cs" Inherits="mpDirectiva"%>
+<%@ Register TagPrefix="ComponentArt" Namespace="ComponentArt.Web.UI" Assembly="ComponentArt.Web.UI" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>T.I.C. Universidad Ed.</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="border-right: black 1px solid; border-top: black 1px solid; border-left: black 1px solid; border-bottom: black 1px solid; width: 100%;">
+            <tr>
+                <td align="left" valign="top" style="background-color: #006699">
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+                        <tr>
+                            <td align="left" style="width: 414px; height: 72px;" valign="top">
+                                <img src="images/TIC_SCHOOL.gif" /></td>
+                            <td align="right" valign="bottom" style="height: 72px">
+                                &nbsp;&nbsp;<br />
+                                <br />
+                                <span style="color: #ffffff">Licenciado para:
+                                    <asp:Label ID="lblcentro" runat="server" Font-Bold="True"></asp:Label></span></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="right" style="height: 18px; background-color: #ffff99" valign="top">
+                                <asp:Label ID="lblusuariowr" runat="server" Font-Names="Arial" Font-Size="14px"></asp:Label>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<asp:Label ID="lblFecha" runat="server" Font-Names="Arial" Font-Size="14px"></asp:Label>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="Entrada.aspx">Salir</asp:HyperLink></td>
+            </tr>
+            <tr>
+                <td style="border-top: black 1px solid; border-bottom: black 1px solid">
+                    <br />
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; height: 100%">
+                        <tr>
+                            <td valign="top" align="left" style="width: 250px">
+                                <componentart:navbar id="NavBar1" runat="server" expandsinglepath="true" fullexpand="true"
+                                    height="480px" sitemapxmlfile="navData.xml" ShowScrollBar="True" Width="260px"></componentart:navbar>
+                            </td>
+                            <td valign="top" style="padding-left: 10px; padding-right: 10px;" align="left">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td align="center" style="border-top: black 1px solid">
+                    <br />
+                    <br />
+                    <table border="0" cellpadding="0" cellspacing="0" style="font-weight: bold; font-size: 12px;
+                        text-transform: uppercase; width: 100%; font-family: Arial; height: 100%; background-color: #e2cfd1;
+                        text-decoration: underline overline">
+                        <tr>
+                            <td style="width: 10%; height: 30px" align="center">
+                                <a href ="InicioStart.aspx" style="color: black; font-style: italic"><span style="font-size: 10pt;
+                                    color: black">Inicio</span></a></td>
+                            <td style="width: 10%; height: 30px" align="center">
+                                <a href = "Ayuda.aspx" style="color: black; font-style: italic"><span style="font-size: 10pt;
+                                    color: black">Ayuda</span></a></td>
+                            <td style="width: 35%; height: 30px">
+                            </td>
+                            <td style="width: 10%; height: 30px" align="center">
+                                <a href = "Info.aspx" style="color: black; font-style: italic"><span style="font-size: 10pt;
+                                    color: black">Info.</span></a></td>
+                            <td style="width: 10%; height: 30px" align="center">
+                            <a href = "Entrada.aspx" style="color: black; font-style: italic"><span style="font-size: 10pt;
+                                    color: black">
+                                SALIR<span style="font-size: 10pt; color: white"> </span></a>
+                            </td>
+                            <td align="center" style="width: 3%; height: 30px">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        &nbsp;
+    </div>
+    </form>
+</body>
+</html>

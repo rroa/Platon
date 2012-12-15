@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="dbRegClassConnStr">
+      <rd:DataSourceID>cd7caf9e-bfe2-4799-a9d8-09734aea0bbe</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>11in</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="nombre">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>nombre</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Line Name="line1">
+        <Top>0.8125in</Top>
+        <Width>5.75in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Left>0.125in</Left>
+      </Line>
+      <Textbox Name="textbox13">
+        <Width>4.66667in</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontSize>14pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.66667in</Left>
+        <Height>0.375in</Height>
+        <Value>=Parameters!nombre.Value</Value>
+      </Textbox>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.5in</Top>
+        <Width>3.33333in</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>1.33334in</Left>
+        <Height>0.25in</Height>
+        <Value>FORMULARIO DE ADMISION</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.8125in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>1in</BottomMargin>
+  <rd:ReportID>4058ffb1-62ef-43d1-86c8-69fb2460696b</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo_uniremhos">
+      <MIMEType>image/gif</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <DataSets>
+    <DataSet Name="dsUniversidad_Vista_Dt_Estudiante">
+      <Fields>
+        <Field Name="matricula">
+          <DataField>matricula</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="apellido">
+          <DataField>apellido</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="f_nacimiento">
+          <DataField>f_nacimiento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="telefono">
+          <DataField>telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cedula">
+          <DataField>cedula</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ano_ingreso">
+          <DataField>ano_ingreso</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="fecha_ingreso">
+          <DataField>fecha_ingreso</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="cod_stu">
+          <DataField>cod_stu</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sexo">
+          <DataField>sexo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="direccion">
+          <DataField>direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="n_padre">
+          <DataField>n_padre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="n_madre">
+          <DataField>n_madre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="id_recinto">
+          <DataField>id_recinto</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="periodo_entrada">
+          <DataField>periodo_entrada</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="mail">
+          <DataField>mail</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Se_entero">
+          <DataField>Se_entero</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="beca">
+          <DataField>beca</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="sol_admision">
+          <DataField>sol_admision</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="cert_nac">
+          <DataField>cert_nac</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="cert_medico">
+          <DataField>cert_medico</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="cop_cedula">
+          <DataField>cop_cedula</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="fotos">
+          <DataField>fotos</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="rec_notas">
+          <DataField>rec_notas</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="cert_educacion">
+          <DataField>cert_educacion</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="id_carrera">
+          <DataField>id_carrera</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="f_inscripcion">
+          <DataField>f_inscripcion</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="activo">
+          <DataField>activo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="carrera_nombre">
+          <DataField>carrera_nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nacionalidad">
+          <DataField>nacionalidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="pasaporte">
+          <DataField>pasaporte</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dbRegClassConnStr</DataSourceName>
+        <CommandText>SELECT     matricula, nombre, apellido, f_nacimiento, telefono, cedula, ano_ingreso, fecha_ingreso, cod_stu, sexo, direccion, n_padre, n_madre, id_recinto, 
+                      periodo_entrada, mail, Se_entero, beca, sol_admision, cert_nac, cert_medico, cop_cedula, fotos, rec_notas, cert_educacion, id_carrera, f_inscripcion, 
+                      activo, carrera_nombre, nacionalidad, pasaporte
+FROM         Vista_Dt_Estudiante</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsUniversidad</rd:DataSetName>
+        <rd:TableName>Vista_Dt_Estudiante</rd:TableName>
+        <rd:TableAdapterName>Vista_Dt_EstudianteTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="Se_entero">
+        <rd:DefaultName>Se_entero</rd:DefaultName>
+        <Top>4.76042in</Top>
+        <Width>5.75in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.125in</Left>
+        <Value>=First(Fields!Se_entero.Value)</Value>
+      </Textbox>
+      <Textbox Name="beca">
+        <rd:DefaultName>beca</rd:DefaultName>
+        <Top>4.125in</Top>
+        <Width>0.625in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>5.14583in</Left>
+        <Height>0.25in</Height>
+        <Value>=Sum(Fields!beca.Value)</Value>
+      </Textbox>
+      <Textbox Name="f_inscripcion">
+        <rd:DefaultName>f_inscripcion</rd:DefaultName>
+        <Top>4.125in</Top>
+        <Width>1.875in</Width>
+        <Style>
+          <Format>d</Format>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.125in</Left>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!f_inscripcion.Value)</Value>
+      </Textbox>
+      <Textbox Name="carrera_nombre">
+        <rd:DefaultName>carrera_nombre</rd:DefaultName>
+        <Top>0.375in</Top>
+        <Width>2.125in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.75in</Left>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!carrera_nombre.Value)</Value>
+      </Textbox>
+      <Textbox Name="matricula">
+        <rd:DefaultName>matricula</rd:DefaultName>
+        <Top>0.125in</Top>
+        <Width>2in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.875in</Left>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!matricula.Value)</Value>
+      </Textbox>
+      <Textbox Name="textbox19">
+        <rd:DefaultName>textbox19</rd:DefaultName>
+        <Top>4.125in</Top>
+        <Width>1in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.125in</Left>
+        <Height>0.25in</Height>
+        <Value>% DE BECA:</Value>
+      </Textbox>
+      <Textbox Name="textbox18">
+        <rd:DefaultName>textbox18</rd:DefaultName>
+        <Top>4.125in</Top>
+        <Width>2in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.125in</Left>
+        <Height>0.25in</Height>
+        <Value>FECHA DE INSCRIPCION:</Value>
+      </Textbox>
+      <Textbox Name="textbox15">
+        <rd:DefaultName>textbox15</rd:DefaultName>
+        <Top>4.51042in</Top>
+        <Width>3.25in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.125in</Left>
+        <Height>0.25in</Height>
+        <Value>¿Cómo se enteró de la universidad?</Value>
+      </Textbox>
+      <Rectangle Name="rectangle1">
+        <Left>0.16667in</Left>
+        <ZIndex>3</ZIndex>
+        <ReportItems>
+          <Textbox Name="nacionalidad">
+            <rd:DefaultName>nacionalidad</rd:DefaultName>
+            <Top>2.625in</Top>
+            <Width>3in</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>16</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.64583in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!nacionalidad.Value)</Value>
+          </Textbox>
+          <Textbox Name="pasaporte">
+            <rd:DefaultName>pasaporte</rd:DefaultName>
+            <Top>2.375in</Top>
+            <Width>2.125in</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>15</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>2.25in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!pasaporte.Value)</Value>
+          </Textbox>
+          <Textbox Name="mail">
+            <rd:DefaultName>mail</rd:DefaultName>
+            <Top>1.375in</Top>
+            <Width>1.58333in</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>14</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.04167in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!mail.Value)</Value>
+          </Textbox>
+          <Textbox Name="f_nacimiento">
+            <rd:DefaultName>f_nacimiento</rd:DefaultName>
+            <Top>1.375in</Top>
+            <Width>1.125in</Width>
+            <Style>
+              <Format>d</Format>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>13</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.9375in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!f_nacimiento.Value)</Value>
+          </Textbox>
+          <Textbox Name="cedula">
+            <rd:DefaultName>cedula</rd:DefaultName>
+            <Top>0.875in</Top>
+            <Width>1.25in</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>12</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>4.01042in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!cedula.Value)</Value>
+          </Textbox>
+          <Textbox Name="telefono">
+            <rd:DefaultName>telefono</rd:DefaultName>
+            <Top>0.875in</Top>
+            <Width>1.25in</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>11</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.125in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!telefono.Value)</Value>
+          </Textbox>
+          <Textbox Name="direccion">
+            <rd:DefaultName>direccion</rd:DefaultName>
+            <Top>0.48958in</Top>
+            <Width>4.5in</Width>
+            <Style>
+              <TextAlign>Left</TextAlign>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>10</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.125in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!direccion.Value)</Value>
+          </Textbox>
+          <Textbox Name="nombre">
+            <rd:DefaultName>nombre</rd:DefaultName>
+            <Top>0.125in</Top>
+            <Width>4.47917in</Width>
+            <Style>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>9</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>1.02083in</Left>
+            <Height>0.25in</Height>
+            <Value>=First(Fields!nombre.Value) &amp; " " &amp; First(Fields!apellido.Value)</Value>
+          </Textbox>
+          <Textbox Name="textbox21">
+            <Top>1.375in</Top>
+            <Width>0.8125in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>8</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.20833in</Left>
+            <Height>0.25in</Height>
+            <Value>CORREO:</Value>
+          </Textbox>
+          <Textbox Name="textbox20">
+            <rd:DefaultName>textbox20</rd:DefaultName>
+            <Top>1.375in</Top>
+            <Width>1.75in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>7</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>FECHA DE NACIMIENTO:</Value>
+          </Textbox>
+          <Textbox Name="textbox14">
+            <Top>2.625in</Top>
+            <Width>1.375in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>6</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>NACIONALIDAD:</Value>
+          </Textbox>
+          <Textbox Name="textbox12">
+            <Top>2.375in</Top>
+            <Width>2in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>5</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.25in</Left>
+            <Height>0.25in</Height>
+            <Value>NUMERO DE PASAPORTE:</Value>
+          </Textbox>
+          <Textbox Name="textbox11">
+            <Top>2.125in</Top>
+            <Width>1.375in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>4</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>Si es extranjero:</Value>
+          </Textbox>
+          <Textbox Name="textbox10">
+            <Top>0.875in</Top>
+            <Width>0.75in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>3</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>3.25in</Left>
+            <Height>0.25in</Height>
+            <Value>CEDULA:</Value>
+          </Textbox>
+          <Textbox Name="textbox8">
+            <rd:DefaultName>textbox8</rd:DefaultName>
+            <Top>0.875in</Top>
+            <Width>1in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>2</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>TELEFONO:</Value>
+          </Textbox>
+          <Textbox Name="textbox7">
+            <Top>0.48958in</Top>
+            <Width>1in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <ZIndex>1</ZIndex>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>DIRECCION:</Value>
+          </Textbox>
+          <Textbox Name="textbox6">
+            <rd:DefaultName>textbox6</rd:DefaultName>
+            <Top>0.125in</Top>
+            <Width>0.875in</Width>
+            <Style>
+              <Color>Firebrick</Color>
+              <FontWeight>700</FontWeight>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+            <CanGrow>true</CanGrow>
+            <Left>0.125in</Left>
+            <Height>0.25in</Height>
+            <Value>NOMBRE:</Value>
+          </Textbox>
+        </ReportItems>
+        <Top>0.82292in</Top>
+        <Width>5.70833in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Dashed</Default>
+          </BorderStyle>
+        </Style>
+        <Height>3.05208in</Height>
+      </Rectangle>
+      <Textbox Name="textbox5">
+        <Top>0.51042in</Top>
+        <Width>2.08333in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.16667in</Left>
+        <Height>0.25in</Height>
+        <Value>DATOS PERSONALES</Value>
+      </Textbox>
+      <Textbox Name="textbox4">
+        <Top>0.375in</Top>
+        <Width>0.875in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>2.875in</Left>
+        <Height>0.25in</Height>
+        <Value>CARRERA:</Value>
+      </Textbox>
+      <Textbox Name="textbox3">
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Top>0.125in</Top>
+        <Width>1in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>2.875in</Left>
+        <Height>0.25in</Height>
+        <Value>MATRICULA:</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>5.01042in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox9">
+        <rd:DefaultName>textbox9</rd:DefaultName>
+        <Top>0.40625in</Top>
+        <Width>1.375in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4in</Left>
+        <Height>0.25in</Height>
+        <Value>Firma del solicitante</Value>
+      </Textbox>
+      <Line Name="line3">
+        <Top>0.32292in</Top>
+        <Width>1.875in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Left>3.75in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Line Name="line2">
+        <Width>5.75in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Left>0.125in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox17">
+        <rd:DefaultName>textbox17</rd:DefaultName>
+        <Top>0.25in</Top>
+        <Width>1.23958in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.75in</Left>
+        <Height>0.25in</Height>
+        <Value>=DateString</Value>
+      </Textbox>
+      <Textbox Name="textbox16">
+        <rd:DefaultName>textbox16</rd:DefaultName>
+        <Top>0.25in</Top>
+        <Width>0.625in</Width>
+        <Style>
+          <Color>Firebrick</Color>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.125in</Left>
+        <Height>0.25in</Height>
+        <Value>Fecha:</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.75in</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>1in</TopMargin>
+</Report>
