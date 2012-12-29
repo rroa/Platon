@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="dbRegClassConnStr">
+      <rd:DataSourceID>b4672d81-6130-4609-bbc2-a2887ca3bb6b</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>5.5in</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>8.5in</InteractiveWidth>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>1in</RightMargin>
+  <LeftMargin>1in</LeftMargin>
+  <rd:ReportID>929b4512-1f17-4217-bc5c-75f0534303af</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo_ufhec_black">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <DataSets>
+    <DataSet Name="dsUniversidad_viewRecibo">
+      <Fields>
+        <Field Name="id_Recibo">
+          <DataField>id_Recibo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="student_id">
+          <DataField>student_id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="matricula">
+          <DataField>matricula</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="apellido">
+          <DataField>apellido</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="fecha_hora">
+          <DataField>fecha_hora</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="concepto">
+          <DataField>concepto</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="monto">
+          <DataField>monto</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ciclo">
+          <DataField>ciclo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="carrera_nombre">
+          <DataField>carrera_nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="formapago">
+          <DataField>formapago</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="reciboidusuario">
+          <DataField>reciboidusuario</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="recibousuario">
+          <DataField>recibousuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dbRegClassConnStr</DataSourceName>
+        <CommandText>SELECT     Recibo.id_Recibo, Recibo.student_id, viewCajaBalanceEstudiante.matricula, viewCajaBalanceEstudiante.nombre, viewCajaBalanceEstudiante.apellido, 
+                      Recibo.fecha_hora, viewCajaBalanceEstudiante.concepto, CajaPagoEstudiantes.monto, CajaPagoEstudiantes.ciclo, viewCajaBalanceEstudiante.carrera_nombre, 
+                      viewCajaBalanceEstudiante.formapago, viewCajaBalanceEstudiante.reciboidusuario, viewCajaBalanceEstudiante.recibousuario
+FROM         Recibo LEFT OUTER JOIN
+                      CajaPagoEstudiantes ON Recibo.id_Recibo = CajaPagoEstudiantes.no_recibo INNER JOIN
+                      viewCajaBalanceEstudiante ON CajaPagoEstudiantes.id_balance = viewCajaBalanceEstudiante.id_balance
+WHERE     (CajaPagoEstudiantes.activo = 1)</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsUniversidad</rd:DataSetName>
+        <rd:TableName>viewRecibo</rd:TableName>
+        <rd:TableAdapterName>viewReciboTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="centroestudio_CentroEstudio">
+      <Fields>
+        <Field Name="idcentro">
+          <DataField>idcentro</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="nombre">
+          <DataField>nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="direccion">
+          <DataField>direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="telefono">
+          <DataField>telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="siglas">
+          <DataField>siglas</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>dbRegClassConnStr</DataSourceName>
+        <CommandText>SELECT     idcentro, nombre, direccion, telefono, siglas
+FROM         CentroEstudio</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>centroestudio</rd:DataSetName>
+        <rd:TableName>CentroEstudio</rd:TableName>
+        <rd:TableAdapterName>CentroEstudioTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>6in</Width>
+  <Body>
+    <ReportItems>
+      <Textbox Name="formapago">
+        <rd:DefaultName>formapago</rd:DefaultName>
+        <Top>3.27083in</Top>
+        <Width>3.25in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>="Forma de Pago: " &amp; First(Fields!formapago.Value, "dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Textbox Name="recibousuario">
+        <rd:DefaultName>recibousuario</rd:DefaultName>
+        <Top>0.83333in</Top>
+        <Width>2.75in</Width>
+        <Style>
+          <FontSize>9pt</FontSize>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3in</Left>
+        <Height>0.25in</Height>
+        <Value>="Usuario: " &amp; First(Fields!recibousuario.Value, "dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Textbox Name="carrera_nombre">
+        <rd:DefaultName>carrera_nombre</rd:DefaultName>
+        <Top>2.03125in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>="Carrera: " &amp; First(Fields!carrera_nombre.Value, "dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Line Name="line2">
+        <Top>3.125in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <Left>0.25in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Table Name="table1">
+        <ZIndex>12</ZIndex>
+        <DataSetName>dsUniversidad_viewRecibo</DataSetName>
+        <Top>2.3125in</Top>
+        <Width>5.625in</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="concepto">
+                      <rd:DefaultName>concepto</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!concepto.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="monto">
+                      <rd:DefaultName>monto</rd:DefaultName>
+                      <Style>
+                        <Format>C</Format>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!monto.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Style>
+          <FontSize>9pt</FontSize>
+        </Style>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Concepto</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Style>
+                        <BorderStyle>
+                          <Default>Solid</Default>
+                        </BorderStyle>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Monto</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>4.75in</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>0.875in</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>0.75in</Height>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <Style>
+                        <FontSize>9pt</FontSize>
+                        <FontWeight>700</FontWeight>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Total</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="monto_1">
+                      <rd:DefaultName>monto_1</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <Format>C</Format>
+                        <TextAlign>Right</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Sum(Fields!monto.Value)</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.25in</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+        <Left>0.1875in</Left>
+      </Table>
+      <Textbox Name="fecha_hora">
+        <rd:DefaultName>fecha_hora</rd:DefaultName>
+        <Top>1.15625in</Top>
+        <Width>2.375in</Width>
+        <Style>
+          <TextAlign>Right</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>3.375in</Left>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!fecha_hora.Value,"dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Textbox Name="nombre">
+        <rd:DefaultName>nombre</rd:DefaultName>
+        <Top>1.76042in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>=First(Fields!nombre.Value,"dsUniversidad_viewRecibo") &amp; " " &amp; First(Fields!apellido.Value,"dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Textbox Name="matricula">
+        <rd:DefaultName>matricula</rd:DefaultName>
+        <Top>1.46875in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>="ESTUDIANTE " &amp; First(Fields!matricula.Value,"dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Textbox Name="id_Recibo">
+        <rd:DefaultName>id_Recibo</rd:DefaultName>
+        <Top>1.15625in</Top>
+        <Width>3in</Width>
+        <Style>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>8</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.25in</Left>
+        <Height>0.25in</Height>
+        <Value>="RECIBO NO. " &amp; First(Fields!id_Recibo.Value,"dsUniversidad_viewRecibo")</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <rd:DefaultName>textbox5</rd:DefaultName>
+        <Top>3.64583in</Top>
+        <Width>5.625in</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.1875in</Left>
+        <Value>Este recibo debe ser presentado a la fecha de inscripción en cada Cuatrimestre, porque es la única prueba de su pago.</Value>
+      </Textbox>
+      <Line Name="line4">
+        <Top>3.59375in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <Left>0.25in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox10">
+        <Top>3.15625in</Top>
+        <Width>1.625in</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>4.125in</Left>
+        <Height>0.375in</Height>
+        <Value>____________________
+Firma Caja</Value>
+      </Textbox>
+      <Textbox Name="direccion">
+        <rd:DefaultName>direccion</rd:DefaultName>
+        <Top>0.39583in</Top>
+        <Width>4.5in</Width>
+        <Style>
+          <FontSize>8pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.6875in</Left>
+        <Height>0.35417in</Height>
+        <Value>=First(Fields!direccion.Value, "centroestudio_CentroEstudio") &amp; " " &amp; "Tel.: " &amp; First(Fields!telefono.Value, "centroestudio_CentroEstudio")</Value>
+      </Textbox>
+      <Line Name="line3">
+        <Top>0.80209in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Left>0.25in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Line Name="line1">
+        <Top>1.12501in</Top>
+        <Width>5.5in</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Left>0.25in</Left>
+        <Height>0in</Height>
+      </Line>
+      <Textbox Name="textbox1">
+        <rd:DefaultName>textbox1</rd:DefaultName>
+        <Top>0.84375in</Top>
+        <Width>2.1875in</Width>
+        <Style>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.3125in</Left>
+        <Height>0.25in</Height>
+        <Value>RECIBO DE INGRESO</Value>
+      </Textbox>
+      <Textbox Name="nombre_1">
+        <rd:DefaultName>nombre_1</rd:DefaultName>
+        <Width>4.75in</Width>
+        <Style>
+          <FontFamily>Century Gothic</FontFamily>
+          <FontSize>14pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>0.625in</Left>
+        <Height>0.375in</Height>
+        <Value>=First(Fields!nombre.Value,"centroestudio_CentroEstudio")</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>4.02083in</Height>
+  </Body>
+  <Language>en-US</Language>
+  <TopMargin>0.1in</TopMargin>
+</Report>
