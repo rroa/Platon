@@ -1,18 +1,17 @@
 <%@ Page Language="C#" MasterPageFile="~/mpDirectiva.master" MaintainScrollPositionOnPostback="true" AutoEventWireup="true" CodeFile="RecordNotas.aspx.cs" Inherits="RecordNotas" %>
 
-<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <asp:ScriptManager runat="server" ID="scriptManager"></asp:ScriptManager>
     <span style="font-size: 24px; font-family: Arial">RECORD DE NOTAS</span>
     <hr />
     <br />
     <span style="font-size: 12px; font-family: Arial">Escriba la matr&iacute;cula del estudiante
         para visualizar su record de notas<br />
     </span>
-    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><span style="font-size: 12px;
-        font-family: Arial">&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/botones/edit.gif"
-            OnClick="ImageButton1_Click" />
+    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox><span style="font-size: 12px; font-family: Arial">&nbsp;<asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/images/botones/edit.gif"
+        OnClick="ImageButton1_Click" />
     </span>
     <asp:Button ID="Button1" runat="server" Text="Buscar" OnClick="Button1_Click" /><br />
     <br />
@@ -42,28 +41,25 @@
     <br />
     <span style="font-size: 12px; font-family: Arial">Haga clic en el bot&oacute;n de refrescar
         para actualizar el reporte<br />
-        <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt"
-            Height="400px" Width="100%" ZoomMode="PageWidth">
+        <rsweb:ReportViewer id="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
             <LocalReport ReportPath="Record_de_Notas.rdlc">
                 <DataSources>
-                    <rsweb:ReportDataSource DataSourceId="ObjectDataSource2" Name="dsUniversidad_View_RecordDeNotas" />
-                    <rsweb:ReportDataSource DataSourceId="ObjectDataSource3" Name="dsUniversidad_Convalidaciones" />
+                    <rsweb:ReportDataSource Name="dsUniversidad_View_RecordDeNotas" DataSourceId="ObjectDataSource2"></rsweb:ReportDataSource>
+                    <rsweb:ReportDataSource Name="dsUniversidad_Convalidaciones" DataSourceId="ObjectDataSource3"></rsweb:ReportDataSource>
                 </DataSources>
             </LocalReport>
         </rsweb:ReportViewer>
-        <asp:ObjectDataSource ID="ObjectDataSource3" runat="server" OldValuesParameterFormatString="original_{0}"
-            SelectMethod="GetData" TypeName="dsUniversidadTableAdapters.ConvalidacionesTableAdapter">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="TextBox1" Name="matricula" PropertyName="Text" Type="String" DefaultValue="{0}" />
-            </SelectParameters>
-        </asp:ObjectDataSource>
-        <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" OldValuesParameterFormatString="original_{0}"
-            SelectMethod="GetDataByMatricula" TypeName="dsUniversidadTableAdapters.View_RecordDeNotasTableAdapter">
-            <SelectParameters>
-                <asp:ControlParameter ControlID="TextBox1" Name="matricula" PropertyName="Text" Type="String" DefaultValue="{0}" />
-            </SelectParameters>
-        </asp:ObjectDataSource>
         &nbsp;&nbsp;
+    <asp:ObjectDataSource runat="server" SelectMethod="GetData" TypeName="dsUniversidadTableAdapters.ConvalidacionesTableAdapter" ID="ObjectDataSource3" OldValuesParameterFormatString="original_{0}">
+        <SelectParameters>
+            <asp:ControlParameter ControlID="TextBox1" PropertyName="Text" Name="matricula" Type="String"></asp:ControlParameter>
+        </SelectParameters>
+    </asp:ObjectDataSource>
+        <asp:ObjectDataSource runat="server" SelectMethod="GetDataByMatricula" TypeName="dsUniversidadTableAdapters.View_RecordDeNotasTableAdapter" ID="ObjectDataSource2" OldValuesParameterFormatString="original_{0}">
+            <SelectParameters>
+                <asp:ControlParameter ControlID="TextBox1" PropertyName="Text" Name="matricula" Type="String"></asp:ControlParameter>
+            </SelectParameters>
+        </asp:ObjectDataSource>
     </span>
 </asp:Content>
 

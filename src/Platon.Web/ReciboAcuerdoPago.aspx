@@ -1,8 +1,8 @@
 <%@ Page Language="C#" MasterPageFile="~/mpDirectivaNM.master" AutoEventWireup="true" CodeFile="ReciboAcuerdoPago.aspx.cs" Inherits="ReciboAcuerdoPago" %>
 
-<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">    
     <rsweb:reportviewer id="ReportViewer1" runat="server" font-names="Verdana" font-size="8pt"
         height="400px" width="748px">
 <LocalReport ReportPath="ReciboPagoAcuerdo.rdlc"><DataSources>
